@@ -16,10 +16,10 @@ If you have production code calling `POST https://api.remove.bg/v1.0/removebg` s
 ## 10-Second Terminal Test (No Signup Required)
 
 ```bash
-curl -H "X-Api-Key: test_sandbox_key_2026" \
+curl -H "X-Api-Key: live_demo_key" \
   -F "image_file=@sample.jpg" \
   -o output.png \
-  https://api.backgroundremoverapi.com/v1.0/removebg
+  https://backgroundremoverapi.com/v1.0/removebg
 ```
 
 ## Examples

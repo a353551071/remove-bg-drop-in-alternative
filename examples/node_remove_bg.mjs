@@ -4,9 +4,9 @@ const form = new FormData();
 form.append('image_file', new Blob([fs.readFileSync('input.jpg')]), 'input.jpg');
 form.append('size', 'auto');
 
-const res = await fetch('https://api.backgroundremoverapi.com/v1.0/removebg', {
+const res = await fetch('https://backgroundremoverapi.com/v1.0/removebg', {
   method: 'POST',
-  headers: { 'X-Api-Key': process.env.BG_REMOVER_API_KEY },
+  headers: { 'X-Api-Key': process.env.BG_REMOVER_API_KEY || 'live_demo_key' },
   body: form,
 });
 
